@@ -1,5 +1,9 @@
-def test_input_text(expected_result, actual_result):
-    assert self.is_element_present('create_class_button', timeout=30), "No create class button" 
-    pass
-    # ваша реализация, напишите assert и сообщение об ошибке
-    
+def test_input_text (expected_result, actual_result):
+    assert expected_result == actual_result,\
+        f" expected {expected_result}, got {actual_result}"
+ 
+ 
+expected_result = 8
+actual_result = 11
+
+test_input_text (expected_result, actual_result)
